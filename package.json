@@ -1,0 +1,29 @@
+{
+  "name": "mys-translate",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "babel src -d lib -w",
+    "build": "babel src -d lib",
+    "server": "npm run build && node lib/server/index.js",
+    "other": "npm run build && node lib/other/index.js"
+  },
+  "keywords": [],
+  "author": "mySkey",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/plugin-transform-modules-umd": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "koa": "^2.13.0",
+    "md5-node": "^1.0.1"
+  }
+}
