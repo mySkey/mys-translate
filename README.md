@@ -46,7 +46,7 @@ translate("good night", { from 'en', to: 'zh' }) // 传入from，to指定转什�
 translate([{ name: "小明" }, { name: "小红" }])  // 可传入复杂对象，只翻译value，不翻译key
 ```
 
-* 3、在前端项目中，浏览同源策略会跨域，配置proxy。
+* 3、在前端项目中，浏览器同源策略会跨域，配置proxy。
 
 <a href="https://blog.csdn.net/qq_29832217/article/details/102769793" target="_blank">参考vue项目中跨域配置</a>
 
