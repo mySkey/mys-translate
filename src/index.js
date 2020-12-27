@@ -6,10 +6,10 @@ function MysKeyTranslate(config) {
   this.config = {
     showProgress: true,
     requestNumber: 1,
-    agreement: 'http',
+    agreement: "http",
     ...config,
   };
-  this.baiduApi = `${this.config.agreement}://api.fanyi.baidu.com/api/trans/vip/translate`
+  this.baiduApi = `${this.config.agreement}://api.fanyi.baidu.com/api/trans/vip/translate`;
 
   this.createUrl = (domain, form) => {
     let result = domain + "?";
@@ -102,4 +102,5 @@ function MysKeyTranslate(config) {
   return this.translate;
 }
 
+module.exports = MysKeyTranslate;
 export default MysKeyTranslate;
