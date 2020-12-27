@@ -20,7 +20,7 @@ const config = {
     origin: data, // 源文件
     originType: "zh", // 源文件的语言版本
     types: ["en", "jp"], // 需要的语言版本
-    outDir: "./", // 输出文件的目录，最好用绝对路径，相对路径的话已config.js目录为根目录
+    outDir: "./locales", // 输出文件的目录，最好用绝对路径，相对路径的话已config.js目录为根目录
   },
 };
 

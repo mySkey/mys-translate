@@ -1,13 +1,14 @@
 {
   "name": "mys-translate",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "babel src -d lib -w",
     "build": "babel src -d lib",
     "server": "npm run build && node lib/server/index.js",
-    "other": "npm run build && node lib/other/index.js"
+    "other": "npm run build && node lib/other/index.js",
+    "publish": "babel src/index.js -o package/index.js && cd package && npm publish"
   },
   "keywords": [],
   "author": "mySkey",
